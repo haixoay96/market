@@ -1,0 +1,119 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/icons"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/primary"
+        app:title="Giao dịch mọi thứ !"
+        app:titleTextColor="@color/icons" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:stretchColumns="*">
+
+        <TableRow android:layout_weight="1">
+
+            <Button
+                android:textColor="@color/accent"
+                android:id="@+id/app_tivi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="@color/icons"
+                android:drawableTop="@drawable/icon_tivi"
+                android:gravity="center_horizontal"
+                android:text="Ti vi"
+                android:textAllCaps="false" />
+
+
+            <Button
+                android:textColor="@color/accent"
+                android:id="@+id/app_laptop"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="@color/icons"
+                android:drawableTop="@drawable/icon_laptop"
+                android:gravity="center_horizontal"
+                android:text="Laptop"
+                android:textAllCaps="false" />
+
+        </TableRow>
+
+        <TableRow android:layout_weight="1">
+
+            <Button
+                android:textColor="@color/accent"
+                android:id="@+id/app_dienthoai"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="@color/icons"
+                android:drawableTop="@drawable/icon_smartphone"
+                android:gravity="center_horizontal"
+                android:text="Điện thoại"
+                android:textAllCaps="false" />
+
+            <Button
+                android:textColor="@color/accent"
+                android:id="@+id/app_tainghe"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="@color/icons"
+                android:drawableTop="@drawable/icon_headphone"
+                android:gravity="center_horizontal"
+                android:text="Tai nghe"
+                android:textAllCaps="false" />
+
+
+        </TableRow>
+
+        <TableRow android:layout_weight="1">
+
+            <Button
+                android:textColor="@color/accent"
+                android:id="@+id/app_loa"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="@color/icons"
+                android:drawableTop="@drawable/icon_speaker"
+                android:gravity="center_horizontal"
+                android:text="Loa"
+                android:textAllCaps="false" />
+
+
+            <Button
+                android:textColor="@color/accent"
+                android:id="@+id/app_other"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:background="@color/icons"
+                android:drawableTop="@drawable/icon_another"
+                android:gravity="center_horizontal"
+                android:text="Đồ khác"
+                android:textAllCaps="false" />
+
+
+        </TableRow>
+
+        <TableRow android:layout_weight="1">
+
+        </TableRow>
+    </TableLayout>
+
+
+</LinearLayout>
+
+

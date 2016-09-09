@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_light"
+    android:orientation="vertical"
+    tools:context="app.android.thaihn.market.activity.LoginActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/primary"
+        app:title="Đăng Nhập Ngay"
+        app:titleTextColor="@color/icons">
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <EditText
+            android:singleLine="true"
+            android:textColor="@color/accent"
+            android:id="@+id/edt_user_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:background="@color/icons"
+            android:hint="Tài khoản Mail"
+            android:padding="15dp"
+            android:textColorHint="@color/accent" />
+
+        <EditText
+            android:singleLine="true"
+            android:textColor="@color/accent"
+            android:id="@+id/edt_pass_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/icons"
+            android:hint="Mật khẩu"
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:textColorHint="@color/accent" />
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/txt_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@color/icons"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Login"
+            android:textColor="@color/accent" />
+
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/txt_forget_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@color/icons"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Quên Mật Khẩu"
+            android:textColor="@color/accent" />
+
+        <TextView
+            android:textStyle="bold"
+            android:id="@+id/txt_sign_up_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@color/icons"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="Đăng kí"
+            android:textColor="@color/accent" />
+    </LinearLayout>
+</LinearLayout>

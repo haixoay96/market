@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_light"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:background="@color/primary"
+        android:id="@+id/toolbar"
+        app:titleTextColor="@color/icons"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="Đăng Ký Ngay !">
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <EditText
+            android:singleLine="true"
+            android:textColor="@color/accent"
+            android:background="@color/icons"
+            android:textColorHint="@color/accent"
+            android:padding="15dp"
+            android:id="@+id/edt_user_sign"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:hint="Tài khoản Email" />
+
+        <EditText
+            android:singleLine="true"
+            android:textColor="@color/accent"
+            android:layout_marginTop="10dp"
+            android:background="@color/icons"
+            android:textColorHint="@color/accent"
+            android:padding="15dp"
+            android:id="@+id/edt_pass_sign"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mật khẩu"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:singleLine="true"
+            android:textColor="@color/accent"
+            android:layout_marginTop="10dp"
+            android:background="@color/icons"
+            android:padding="15dp"
+            android:textColorHint="@color/accent"
+            android:id="@+id/edt_repass_sign"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập lại mật khẩu"
+            android:inputType="textPassword" />
+
+
+        <TextView
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:background="@color/icons"
+            android:textColor="@color/accent"
+            android:padding="15dp"
+            android:id="@+id/txt_sign"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Đăng kí" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,129 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_light"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/primary"
+        app:title="Đăng Bài"
+        app:titleTextColor="@color/icons">
+
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_margin="10dp"
+            android:background="@color/icons"
+            android:id="@+id/up_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/icon_image_up" />
+        <ImageView
+            android:layout_margin="10dp"
+            android:background="@color/icons"
+            android:id="@+id/up_camera"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/icon_image_up" />
+
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:background="@color/icons"
+                android:layout_marginBottom="1dp"
+                android:id="@+id/up_image_demo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal" />
+
+            <EditText
+                android:singleLine="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:id="@+id/up_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/icons"
+                android:hint="Tiêu đề sản phẩm"
+                android:padding="15dp"
+                android:textColor="@color/accent"
+                android:textColorHint="@color/accent" />
+
+            <Spinner
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:id="@+id/up_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/icons"
+                android:dropDownSelector="@color/accent">
+
+            </Spinner>
+
+            <EditText
+                android:layout_weight="3"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:id="@+id/up_descrip"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/icons"
+                android:hint="Miêu tả thông tin sản phẩm"
+                android:padding="15dp"
+                android:textColor="@color/accent"
+                android:textColorHint="@color/accent" />
+
+            <EditText
+                android:singleLine="true"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:id="@+id/up_phonenumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/icons"
+                android:hint="Số điện thoại liên hệ"
+                android:inputType="number"
+                android:padding="15dp"
+                android:textColor="@color/accent"
+                android:textColorHint="@color/accent" />
+
+            <TextView
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:id="@+id/up_dang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/icons"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="Đăng"
+                android:textColor="@color/accent"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

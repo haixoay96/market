@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:titleTextColor="@color/icons"
+        app:title="Quên Mật Khẩu"
+        android:background="@color/primary"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+</android.support.v7.widget.Toolbar>
+
+
+<LinearLayout
+        android:background="@color/primary_light"
+        android:padding="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:singleLine="true"
+            android:textColor="@color/accent"
+            android:background="@color/icons"
+            android:textColorHint="@color/accent"
+            android:padding="15dp"
+            android:id="@+id/edt_mail_forget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:hint="Tài Khoản Email" />
+
+        <TextView
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:padding="15dp"
+            android:textColor="@color/accent"
+            android:background="@color/icons"
+            android:id="@+id/txt_send_forget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="Reset" />
+    </LinearLayout>
+
+
+</LinearLayout>

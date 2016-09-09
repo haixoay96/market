@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_light"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        app:title="Đổi Mật Khẩu"
+        app:titleTextColor="@color/icons"
+        android:background="@color/primary"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+    </android.support.v7.widget.Toolbar>
+    <LinearLayout
+        android:padding="30dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <EditText
+            android:singleLine="true"
+            android:textColor="@color/accent"
+            android:textColorHint="@color/accent"
+            android:padding="15dp"
+            android:background="@color/icons"
+            android:layout_marginTop="100dp"
+            android:inputType="textPassword"
+            android:id="@+id/change_oldpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mật Khẩu Cũ" />
+
+        <EditText
+            android:singleLine="true"
+            android:textColor="@color/accent"
+            android:textColorHint="@color/accent"
+            android:background="@color/icons"
+            android:padding="15dp"
+            android:layout_marginTop="10dp"
+            android:inputType="textPassword"
+            android:id="@+id/change_newpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mật Khẩu Mới" />
+
+        <EditText
+            android:singleLine="true"
+            android:textColor="@color/accent"
+            android:textColorHint="@color/accent"
+            android:padding="15dp"
+            android:background="@color/icons"
+            android:layout_marginTop="10dp"
+            android:inputType="textPassword"
+            android:id="@+id/changerenewpass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nhập Lại Mật Khẩu Mới" />
+
+        <TextView
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/accent"
+            android:padding="15dp"
+            android:background="@color/icons"
+            android:layout_marginTop="10dp"
+            android:id="@+id/change_doi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Đổi mật khẩu" />
+    </LinearLayout>
+
+</LinearLayout>
